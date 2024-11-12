@@ -9,7 +9,7 @@ name: Deploying to GKE
 
 on:
   push:
-    branches: [ "master" ]
+    branches: [ "main" ]
 
 env:
   PROJECT_ID: demoproject-03092024
