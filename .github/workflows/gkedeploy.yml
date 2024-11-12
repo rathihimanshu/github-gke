@@ -43,7 +43,7 @@ jobs:
       with:
         token_format: 'access_token'
         workload_identity_provider:  ${{ env.WORKLOAD_IDENTITY_PROVIDER_ID }}
-        servicef_account: ${{ env.GCP_SERVICE_ACCOUNT }}
+        service_account: ${{ env.GCP_SERVICE_ACCOUNT }}
 
     # #authenticate with service account f
 
