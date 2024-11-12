@@ -1,2 +1,4 @@
 resources:
   - demopod-githubaction.yaml
+
+namePrefix: action-
