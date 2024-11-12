@@ -1,7 +1,7 @@
 apiVersion: v1
 kind: Pod
 metadata:
-  name: github-pod
+  name: github-pod-serv
   labels:
     name: githubactions
 spec:

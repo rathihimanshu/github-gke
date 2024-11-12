@@ -37,20 +37,20 @@ jobs:
 # an access token.
     
     
-    - id: 'auth'
-      name: 'Authenticate to Google Cloud'
-      uses: 'google-github-actions/auth@v2'
-      with:
-        token_format: 'access_token'
-        workload_identity_provider:  ${{ env.WORKLOAD_IDENTITY_PROVIDER_ID }}
-        service_account: ${{ env.GCP_SERVICE_ACCOUNT }}
+    # - id: 'auth'
+    #   name: 'Authenticate to Google Cloud'
+    #   uses: 'google-github-actions/auth@v2'
+    #   with:
+    #     token_format: 'access_token'
+    #     workload_identity_provider:  ${{ env.WORKLOAD_IDENTITY_PROVIDER_ID }}
+    #     service_account: ${{ env.GCP_SERVICE_ACCOUNT }}
 
     # #authenticate with service account f
 
-    # - uses: 'google-github-actions/auth@v2'
-    #   with:
+    - uses: 'google-github-actions/auth@v2'
+      with:
         
-    #     credentials_json: '${{ secrets.GOOGLE_CREDENTIALS }}' 
+        credentials_json: '${{ secrets.GOOGLE_CREDENTIALS }}' 
     #     # Replace with the name of your GitHub Actions secret
 
 
