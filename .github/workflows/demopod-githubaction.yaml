@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: github-pod
+  labels:
+    name: githubactions
+spec:
+  containers:
+  - name: myapp
+    image: nginx
+    
